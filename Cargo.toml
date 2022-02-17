@@ -2,6 +2,11 @@
 name = "issiz"
 version = "0.1.0"
 edition = "2021"
+license = "MIT"
+description = """
+An utility for unemployed people
+"""
+authors = ["Yiğit Cemal Öztürk <ozturkyigitcemal@gmail.com>"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
