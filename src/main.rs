@@ -1,19 +1,17 @@
 use std::env::args;
 
 fn main() {
-    let txt = args().skip(1);
-    let mut txt2 = String::new();
-    for i in txt {
-        txt2.push_str(i.as_str());
-        txt2.push(' ');
-    }
-    let _ = txt2.pop();
 
-    for i in 0..=(txt2.len()) {
-        println!("{}", &txt2[0..i]);
-    }
+    let args_joined = args().skip(1).collect::<Vec<_>>().join(" ");
+    // println!("Joined form: {:?}", args_joined);
     
-    for i in (0..(txt2.len())).rev() {
-        println!("{}", &txt2[0..i]);
+    let chars = args_joined.chars().collect::<Vec<_>>();
+
+    for i in 0..=(chars.len()) {
+        println!("{}",String::from_iter((&chars[0..i]).iter()));
+    }
+
+    for i in (0..(chars.len())).rev() {
+        println!("{}", String::from_iter((&chars[0..i]).iter()));
     }
 }
