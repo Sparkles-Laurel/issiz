@@ -1,0 +1,10 @@
+issiz: issiz [text|--help]
+       
+       Prints TEXT with unemployed format.
+       If no args were specified, prints blank lines
+
+       ARGUMENTS:
+
+       TEXT	The text to print.
+
+       --help 	If specified, prints this help string.
